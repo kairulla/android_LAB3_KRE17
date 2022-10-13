@@ -8,8 +8,8 @@ import android.view.View;
 import android.widget.Button;
 
 public class Activity2 extends AppCompatActivity {
-    Button buttonPreviously2;
-    Button buttonNext2;
+    private Button buttonPreviously2;
+    private Button buttonNext2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
