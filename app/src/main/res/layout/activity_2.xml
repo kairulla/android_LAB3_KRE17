@@ -13,7 +13,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
-        android:onClick="onClickButtonPreviously2"
         android:text="@string/NAZAD" />
 
     <Button
@@ -22,6 +21,5 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:onClick="onClickButtonNext2"
         android:text="@string/DALEE" />
 </RelativeLayout>

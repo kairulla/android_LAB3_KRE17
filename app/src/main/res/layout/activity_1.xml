@@ -14,7 +14,99 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:onClick="onClickButtonNext1"
         android:text="@string/DALEE" />
+
+    <TextView
+        android:id="@+id/textViewWhatsYourName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center|right"
+        android:text="@string/WhatsYourName" />
+
+    <EditText
+        android:id="@+id/editTextWhatsYourName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/textViewWhatsYourName"
+        android:background="@color/white"
+        android:ems="10"
+        android:gravity="right"
+        android:hint="@string/HintVasheImya"
+        android:inputType="text"
+        android:textSize="24sp" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/textViewWhatsYourName"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#c0c0c0" />
+
+    <TextView
+        android:id="@+id/textViewSelectFavouriteSocialSet"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="@string/textViewSelectFavouriteSocialSet" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/view2"
+        android:layout_toLeftOf="@id/radioGroupSocialSet"
+        android:scaleType="centerInside" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupSocialSet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSelectFavouriteSocialSet"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonInstagram"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="@string/radioButtonInstagram" />
+
+        <RadioButton
+            android:id="@+id/radioButtonVK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="@string/radioButtonVK" />
+
+        <RadioButton
+            android:id="@+id/radioButtonFacebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="@string/radioButtonFacebook" />
+
+    </RadioGroup>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/radioGroupSocialSet"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#c0c0c0" />
 
 </RelativeLayout>

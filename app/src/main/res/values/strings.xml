@@ -3,4 +3,10 @@
     <string name="DALEE">ДАЛЕЕ</string>
     <string name="NAZAD">НАЗАД</string>
     <string name="VIKHOD">ВЫХОД</string>
+    <string name="WhatsYourName">КАК ВАС\nЗОВУТ?</string>
+    <string name="HintVasheImya">ВАШЕ ИМЯ</string>
+    <string name="textViewSelectFavouriteSocialSet">ВЫБЕРИТЕ ВАШУ ЛЮБИМУЮ СОЦИАЛЬНУЮ СЕТЬ</string>
+    <string name="radioButtonInstagram">Инстаграм</string>
+    <string name="radioButtonVK">ВКонтакте</string>
+    <string name="radioButtonFacebook">Фэйсбук</string>
 </resources>
