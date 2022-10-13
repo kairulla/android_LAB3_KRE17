@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/portrait1"
+    tools:context=".Activity1">
+
+    <TextView
+        android:id="@+id/textViewKtoVi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:rotationX="37"
+        android:textColor="@color/blue"
+        android:textSize="28dp"
+        android:text="Кто вы?" />
+
+    <EditText
+        android:id="@+id/editTextVvediteSudaFIO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewKtoVi"
+        android:gravity="center"
+        android:ems="20"
+        android:hint="введите сюда ФИО"
+        android:background="@color/white"
+        android:inputType="textPersonName"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/textViewVveditVashPol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextVvediteSudaFIO"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Выберите Ваш пол:"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewVveditVashPol"
+        android:layout_alignParentRight="true"
+        android:text="мужчина"
+        android:textColor="@color/green"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/textViewViberiteObrazovanie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/checkBox"
+        android:layout_marginTop="20dp"
+        android:text="Выберите образование"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewViberiteObrazovanie"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp" >
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/red"
+            android:text="НАЧАЛЬНОЕ"
+            android:textSize="20dp"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/yellow"
+            android:text="СРЕДНЕЕ"
+            android:textSize="20dp"
+            android:textColor="@color/blue" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:text="ВЫСШЕЕ"
+            android:textSize="20dp"
+            android:textColor="@color/black" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewVashaStrana"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroup"
+        android:gravity="right"
+        android:text="Ваша страна:"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/buttonNext1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="126dp"
+        android:layout_marginBottom="162dp"
+        android:text="ДАЛЕЕ" />
+
+</RelativeLayout>
