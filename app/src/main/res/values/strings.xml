@@ -6,6 +6,7 @@
     <string name="WhatsYourName">КАК ВАС\nЗОВУТ?</string>
     <string name="HintVasheImya">ВАШЕ ИМЯ</string>
     <string name="textViewSelectFavouriteSocialSet">ВЫБЕРИТЕ ВАШУ ЛЮБИМУЮ СОЦИАЛЬНУЮ СЕТЬ</string>
+    <string name="textViewYourFavouriteSocialSet">ЛЮБИМАЯ СОЦСЕТЬ</string>
     <string name="radioButtonInstagram">Инстаграм</string>
     <string name="radioButtonVK">ВКонтакте</string>
     <string name="radioButtonFacebook">Фэйсбук</string>

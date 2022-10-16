@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -17,6 +18,7 @@ public class Activity1 extends AppCompatActivity {
     private RadioGroup radioGroup;
     private RadioButton radioButtonSelected;
     private ImageView imageView;
+    private EditText editTextWhatsYourName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,21 +30,21 @@ public class Activity1 extends AppCompatActivity {
         radioGroupOnCheckedChangeListener();
         buttonNext1 = (Button) findViewById(R.id.buttonNext1);
         buttonNext1_OnClickListener();
+        editTextWhatsYourName = (EditText) findViewById(R.id.editTextWhatsYourName);
     }
 
     private void radioGroupOnCheckedChangeListener() {
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-//                Log.d("MyDebug", String.valueOf(checkedId));
                 switch(checkedId){
-                    case 2131231070:
+                    case R.id.radioButtonInstagram:
                         imageView.setBackground(getResources().getDrawable(R.drawable.logo_instagram));
                         break;
-                    case 2131231071:
+                    case R.id.radioButtonVK:
                         imageView.setBackground(getResources().getDrawable(R.drawable.logo_vkontakte));
                         break;
-                    case 2131231069:
+                    case R.id.radioButtonFacebook:
                         imageView.setBackground(getResources().getDrawable(R.drawable.logo_facebook));
                         break;
                 }
@@ -55,6 +57,22 @@ public class Activity1 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Activity1.this, Activity2.class);
+
+                radioButtonSelected = (RadioButton) findViewById(radioGroup.getCheckedRadioButtonId());
+                String myName = editTextWhatsYourName.getText().toString().trim();
+
+                if (myName.equals("")) {
+                    intent.putExtra("yourName", "нет имени");
+                } else {
+                    intent.putExtra("yourName", myName);
+                }
+
+                try {
+                    intent.putExtra("socialSet", radioButtonSelected.getText().toString());
+                } catch (Exception ex) {
+                    intent.putExtra("socialSet", "не выбрано");
+                }
+
                 startActivity(intent);
             }
         });

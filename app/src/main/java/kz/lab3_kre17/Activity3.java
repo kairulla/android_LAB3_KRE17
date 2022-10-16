@@ -5,10 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 public class Activity3 extends AppCompatActivity {
     private Button buttonPreviously3;
     private Button buttonExit3;
+    private EditText editTextFinalResult;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +21,12 @@ public class Activity3 extends AppCompatActivity {
         buttonPreviously3_OnClickListener();
         buttonExit3 = (Button) findViewById(R.id.buttonExit3);
         buttonExit3_OnClickListener();
+        editTextFinalResult = (EditText) findViewById(R.id.editTextFinalResult);
+        editTextFinalResult.setKeyListener(null);
+        editTextFinalResult.setText("");
+
+        editTextFinalResult.append(String.format("%s %s \n", getString(R.string.HintVasheImya), getIntent().getStringExtra("yourName")));
+        editTextFinalResult.append(String.format("%s %s \n", getString(R.string.textViewYourFavouriteSocialSet), getIntent().getStringExtra("socialSet")));
     }
 
     private void buttonPreviously3_OnClickListener() {

@@ -37,6 +37,10 @@ public class Activity2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Activity2.this, Activity3.class);
+
+                intent.putExtra("yourName", getIntent().getStringExtra("yourName"));
+                intent.putExtra("socialSet", getIntent().getStringExtra("socialSet"));
+
                 startActivity(intent);
             }
         });

@@ -8,6 +8,16 @@
     android:background="@drawable/portrait3"
     tools:context=".Activity3">
 
+    <EditText
+        android:id="@+id/editTextFinalResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/buttonPreviously3"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:gravity="top|left"
+        android:inputType="none" />
+
     <Button
         android:id="@+id/buttonPreviously3"
         android:layout_width="wrap_content"
