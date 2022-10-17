@@ -10,4 +10,21 @@
     <string name="radioButtonInstagram">Инстаграм</string>
     <string name="radioButtonVK">ВКонтакте</string>
     <string name="radioButtonFacebook">Фэйсбук</string>
+    <string name="textViewFavouriteOnlineGame">ВЫБЕРИТЕ ВАШУ ЛЮБИМУЮ ОНЛАЙН ИГРУ</string>
+    <string name="spinnerOnlineGameList">ЛЮБИМАЯ ОНЛАЙН ИГРА</string>
+    <string name="WhatsYourGender">ВЫБЕРИТЕ ПОЛОВУЮ ПРИНАДЛЕЖНОСТЬ</string>
+    <string name="Man">мужчина</string>
+    <string name="M">М</string>
+    <string name="Woman">женщина</string>
+    <string name="W">Ж</string>
+    <string name="YourGender">ВАШ ПОЛ</string>
+
+    <string-array name="spinnerOnlineGameList">
+        <item>Call of Duty Warzone</item>
+        <item>Dota 2</item>
+        <item>Counter Strike Global Offensive</item>
+        <item>Warface</item>
+        <item>World of Tanks</item>
+        <item>TankiX Revive</item>
+    </string-array>
 </resources>

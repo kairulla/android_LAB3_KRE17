@@ -25,8 +25,10 @@ public class Activity3 extends AppCompatActivity {
         editTextFinalResult.setKeyListener(null);
         editTextFinalResult.setText("");
 
-        editTextFinalResult.append(String.format("%s %s \n", getString(R.string.HintVasheImya), getIntent().getStringExtra("yourName")));
-        editTextFinalResult.append(String.format("%s %s \n", getString(R.string.textViewYourFavouriteSocialSet), getIntent().getStringExtra("socialSet")));
+        editTextFinalResult.append(String.format("%s: %s \n", getString(R.string.HintVasheImya), getIntent().getStringExtra("editTextWhatsYourName")));
+        editTextFinalResult.append(String.format("%s: %s \n", getString(R.string.textViewYourFavouriteSocialSet), getIntent().getStringExtra("radioButtonSelected")));
+        editTextFinalResult.append(String.format("%s: %s \n", getString(R.string.spinnerOnlineGameList), getIntent().getStringExtra("spinnerOnlineGameList")));
+        editTextFinalResult.append(String.format("%s: %s \n", getString(R.string.YourGender), getIntent().getStringExtra("switchGender")));
     }
 
     private void buttonPreviously3_OnClickListener() {

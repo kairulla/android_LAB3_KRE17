@@ -38,8 +38,10 @@ public class Activity2 extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Activity2.this, Activity3.class);
 
-                intent.putExtra("yourName", getIntent().getStringExtra("yourName"));
-                intent.putExtra("socialSet", getIntent().getStringExtra("socialSet"));
+                intent.putExtra("editTextWhatsYourName", getIntent().getStringExtra("editTextWhatsYourName"));
+                intent.putExtra("radioButtonSelected", getIntent().getStringExtra("radioButtonSelected"));
+                intent.putExtra("spinnerOnlineGameList", getIntent().getStringExtra("spinnerOnlineGameList"));
+                intent.putExtra("switchGender", getIntent().getStringExtra("switchGender"));
 
                 startActivity(intent);
             }

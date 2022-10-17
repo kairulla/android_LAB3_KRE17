@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -108,5 +107,70 @@
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
         android:background="#c0c0c0" />
+
+    <TextView
+        android:id="@+id/textViewFavouriteOnlineGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view2"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="@string/textViewFavouriteOnlineGame" />
+
+    <Spinner
+        android:id="@+id/spinnerOnlineGameList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewFavouriteOnlineGame"
+        android:entries="@array/spinnerOnlineGameList"
+        android:popupBackground="@color/white"
+        android:textAlignment="center" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/spinnerOnlineGameList"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#c0c0c0" />
+
+    <TextView
+        android:id="@+id/textViewWhatsYourGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view3"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/WhatsYourGender" />
+
+    <Switch
+        android:id="@+id/switchGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewWhatsYourGender"
+        android:layout_centerHorizontal="true"
+        android:textOff="@string/W"
+        android:textOn="@string/M" />
+
+    <ImageView
+        android:id="@+id/imageViewMan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewWhatsYourGender"
+        android:layout_toRightOf="@id/switchGender"
+        android:background="@drawable/gender_background"
+        android:visibility="gone"
+        app:srcCompat="@drawable/man_symbol" />
+
+    <ImageView
+        android:id="@+id/imageViewWoman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewWhatsYourGender"
+        android:layout_toLeftOf="@id/switchGender"
+        android:background="@drawable/gender_background"
+        android:foreground="@drawable/woman_symbol"
+        app:srcCompat="@drawable/woman_symbol" />
 
 </RelativeLayout>
